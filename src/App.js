@@ -37,7 +37,11 @@ function App() {
       <h1>Liste de fruits</h1>
       <ul>
         {fruits.map((fruit) => (
-          <Fruit fruitInfo={fruit} onFruitDelete={handleDelete} key={fruit.id}></Fruit>
+          <Fruit
+            fruitInfo={fruit}
+            actionClick={() => handleDelete(fruit.id)}
+            key={fruit.id}
+          ></Fruit>
         ))}
       </ul>
       <FruitForm handleAdd={handleAdd}></FruitForm>
