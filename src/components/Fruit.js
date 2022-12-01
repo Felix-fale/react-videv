@@ -6,6 +6,7 @@ export default function Fruit(props) {
 
   // comportements
 
+  
   // affichage
   return (
     <li>
